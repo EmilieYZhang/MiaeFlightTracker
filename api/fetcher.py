@@ -29,4 +29,4 @@ def flights_accessor():
     r = requests.get(url)
     if not r.ok:
         raise RuntimeError(r.json())
-    print(r.jason())
+    return r.json()
